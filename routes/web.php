@@ -16,3 +16,25 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/home', function(){
+    return view ('home');
+    });
+
+Route::get('/index', function(){
+        return view ('index');
+        });
+
+// Route::get('/index/{id}', function($id){
+//         return ('profik');
+//         });
+
+route::get('/master', function(){
+    return view ('master');
+    });
+
+    route::get('/mproject', function(){
+        return view ('mproject');
+        });
+    
