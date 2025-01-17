@@ -38,3 +38,6 @@ route::get('/master', function(){
         return view ('mproject');
         });
     
+        route::get('/service', function(){
+            return view ('service');
+            });
