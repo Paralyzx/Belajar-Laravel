@@ -1,6 +1,6 @@
 @extends('master')
-@section('title','master project')
-@section('content title','master project')
+@section('title','master service')
+@section('content title','master service')
 @section('home')
 
 <div class="col-md-10 text-dark" style="height:100vh;">
