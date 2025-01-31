@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class court_type extends Model
 {
-    use HasFactory;
+  
 }
