@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\court_typeController;
+use App\Http\Controllers\courtController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,9 +32,9 @@ Route::get('/index', function(){
 //         return ('profik');
 //         });
 
-route::get('/master', function(){
-    return view ('master');
-    });
+//route::get('/master', function(){
+  //  return view ('master');
+  //  });
 
     route::get('/mproject', function(){
         return view ('mproject');
@@ -41,3 +43,11 @@ route::get('/master', function(){
         route::get('/service', function(){
             return view ('service');
             });
+
+            route::get('/court_type', [court_typeController::class, 'index']);
+            route::get('/court', [courtController::class, 'index']);
+            route::post('/court_type', [court_typeController::class, 'store']);
+
+            route::resource('court', courtController::class);
+
+            ?>

@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class court_type extends Model
 {
-  
+  public function type(){
+    return $this->hasMany(court::class);
+  }
 }
